@@ -13,7 +13,7 @@ const API_KEY = "6d06dce3";
        
 
 
-fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=films`)
+fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=films`)
 .then( (response)=>response.json())
 .then(films =>
 
@@ -38,18 +38,14 @@ fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=films`)
 elFilmsForm.addEventListener("submit", (evt)=>{
     evt.preventDefault()
 
-    if(elSearchInput.value!=""){
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${elSearchInput.value}`)
-        .then( (response)=>response.json())
-        .then(films =>
-            renderFilms(films, elFilmsList)
-        )
-    }
+    // if(elSearchInput.value!=""){
+    //     fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${elSearchInput.value}`)
+    //     .then( (response)=>response.json())
+    //     .then(films =>
+    //         renderFilms(films, elFilmsList)
+    //     )
+    // }
 
-    else
-    {
-        return
-    }
 })
 
 
@@ -71,6 +67,5 @@ function renderFilms(array, node){
 elFilmsForm.addEventListener("submit",(evt)=>{
     evt.preventDefault();
     searchMovies(films.Title);
-    
 
 })
