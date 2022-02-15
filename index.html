@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 class="title">
+        Movies catalog 
+    </h2>
+    
+    <section class="films"> 
+
+        <div class="films__left">
+            <form class="films__form">
+                <input class="input input-search" type="text" name="" placeholder="search name...">
+                <input class="input input-number" type="number" name="" placeholder="number....">
+                <button class="films__button" type="submit">search</button>
+            </form>
+        </div>
+
+        <ul class="films__list"></ul>
+        <template id="films-template">
+            <li class="films__item"> 
+                <img class="films__img" src="https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg" alt="Shazam poster"
+                width="305" height="300">
+                <h3 class="films__title">
+                    Shazam
+                </h3>
+                <!-- <p class="films__text">
+                    "A boy is given the ability to become an adult superhero in times of need with a single magic word.",
+                </p> -->
+                <time class="films__time">
+                    1553299200
+                </time>
+                <p class="films__type">
+
+                </p>
+            </li>
+        </template>
+
+        <!-- <div class="container-controllers">
+            <button class="prev">previous</button>
+            <button class="next">next</button>
+          </div>
+         -->
+    </section>
+
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/style.js"></script>
+</body>
+</html>

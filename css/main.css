@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.films{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-top:20px;
+    /* height: 650px; */
+    overflow: hidden;
+}
+
+.title{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.films__form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    padding-top: 80px;
+}
+
+.input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(201, 178, 178);
+    border-radius: 10px;
+}
+
+.films__button{
+    max-width: 150px;
+    width: 100%;
+    padding:  8px 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(201, 178, 178);
+
+}
+
+
+.films__list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    /* display: flex; */
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.btn{
+    padding: 8px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(23, 39, 3);
+    border-radius: 10px;
+}
+
+.btn-trailer{
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-more{
+    background-color: rgb(6, 196, 221);
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-bookmark{
+    background-color: rgb(221, 6, 167);
+    color: #fff;
+    font-size: 16px; 
+}
+
+.films__genres{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: circle;
+}
